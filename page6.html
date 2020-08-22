@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jewel Shop | Ecommerce Website Design</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" width="100px" style="margin-top: -35px">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="page2.html">About</a></li>
+				<li><a href="page3.html">All Products</a></li>
+				<li><a href="page6.html">Account</a></li>
+			</ul>
+		</nav>
+			<a href="page4.html"><img src="images/cart.png" width="20px" height= "20px" href=""></a>
+			<img src="images/menu.png" class="menu-icon" width="15px" height= "20px">
+	</div>
+	</div>
+
+	<!-- offer -->
+	<h1 class="titleC">Account</h1>
+	<div class="hero">
+		<div class="form-box2">
+			<div class="button-box">
+				<div id="buttn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="email" class="input-field" placeholder="Email Id" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+	<br>
+	<br>
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+	</script>
+
+
+	<!--- <div class="footer" id="footer" style="bottom:0px">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download App</h3>
+					<p>On Android or IOS</p>
+				</div>
+				<div class="footer-col-2">
+					<h3>Follow Us</h3>
+					<p>Facebook</p>
+					<p>Instagram</p>
+					<p>Twitter</p>
+					<p>Etsy</p>
+				</div>
+				<div class="footer-col-3" id="contact">
+					<h3>Contact</h3>
+					<p>123 456 789</p>
+					<p>Jewels@yahoo.com</p>
+					<p>No. 10 Jewel Road, Nigeria</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p style="font-size: small; color: white">Author: Zainab Sani    |    FemCode Bootcamp August 2020</p>
+	</div> -->
+
+</body>
+</html>  
